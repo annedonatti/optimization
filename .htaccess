@@ -38,7 +38,7 @@ SetEnvIfNoCase Request_URI \.(?:avi|mov|mp3|mp4|rm)$ no-gzip dont-vary
 </IfModule>
 
 #Compressão GZIP
-#Recomendado para otimização o GZIP é utilizado para economizar banda, basicamente ira reduzirá o tempo de carregamento da página.
+#utilizado para economizar banda, basicamente ira reduzirá o tempo de carregamento da página.
 <ifmodule mod_gzip.c="">
 mod_gzip_on     Yes
 mod_gzip_dechunk  Yes
