@@ -1,4 +1,6 @@
 #Mod_defatle
+#É um módulo do apache que faz a compactação automática da página.
+
 <IfModule mod_deflate.c>
 AddType application/x-font-ttf ttf
 AddType application/x-font-woff woff
@@ -36,6 +38,7 @@ SetEnvIfNoCase Request_URI \.(?:avi|mov|mp3|mp4|rm)$ no-gzip dont-vary
 </IfModule>
 
 #Compressão GZIP
+#Recomendado para otimização o GZIP é utilizado para economizar banda, basicamente ira reduzirá o tempo de carregamento da página.
 <ifmodule mod_gzip.c="">
 mod_gzip_on     Yes
 mod_gzip_dechunk  Yes
